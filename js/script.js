@@ -39,18 +39,35 @@ var TxtType = function(el, toRotate, period) {
         }, delta);
     };
 
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewriter');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewriter');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
         }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

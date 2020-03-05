@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<link rel="icon" href="images/favicon32x32.png">
 
-	<title>About | Zen Caf&eacute;</title>
+	<title>About &vert; Zen Caf&eacute;</title>
 
 	<!-- Bootstrap Core JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	<!-- Custom CSS -->
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
@@ -32,24 +32,38 @@
 </head>
 <body>
 
-	<div class="topnav" id="myTopnav">
-		<a href="index.html">Home</a>
-		<a href="about.html" class="active">About</a>
-		<a href="menu.html">Menu</a>
-		<a href="gallery.html">Gallery</a>
-		<a href="#contact">Contact</a>
-		<a class="nav-right" href="#"><i class="far fa-clock"></i>Make a reservation</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fas fa-bars"></i>
-  		</a>
-	</div>
+	<ul class="topnav2" id="myTopnav">
+			<li><a href="index.html" title="Go to home page">Home</a></li>
+			<li><a href="about.html" class="active" title="Go to the about page">About</a></li>
+			<li><a href="index.html#menu" title="Go to the menu section on the home page">Menu</a></li>
+			<li><a href="gallery.html" title="Go to the gallery page">Gallery</a></li>
+			<li><a href="contact.html" title="Go to the contact">Contact</a></li>
+			<li><a class="nav-right" href="#" title="Go to the booking page."><i class="far fa-clock"></i>Make a reservation</a></li>
+	</ul>
 
-	<div class="container.fluid">
-		<div class="row">
-			<div class="col-6 about"></div>
-			<div class="col-6 about-text">
-				<h1>About</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis natus, id consequatur iure quaerat eveniet quod alias rerum similique voluptate quas ipsa odit, excepturi molestiae quidem dolor necessitatibus!</p>
+	<h1 class="heading">About</h1>
+
+	<div class="container about-container">
+		<div class="row about-section">
+			<div class="col-12 col-md-6">
+				<span class="heading-about">About</span>
+				<h2 class="heading">Zen Caf&eacute;</h1>
+				<p>Welcome to Zen Caf&eacute;, a unique fine dining experience in Sydney, Australia. We invite you to try the best premium coffee and gourmet food Sydney has to offer.</p>
+				<p>Our mission is to raise the appreciation of specialty coffee and redefine the typical caf&eacute; experience by offering our customers superior coffee and food quality with the utmost attention to detail.</p>
+			</div>
+			<div class="col-12 col-md-6 parallax">
+				<img src="images/chocolate-mousse.jpg" alt="Picture of chocolate mousse.">
+			</div>
+		</div>
+
+		<div class="row about-section">
+			<div class="col-12 col-md-6">
+				<span class="heading-about">About</span>
+				<h2 class="heading">Our Coffee</h1>
+				<p>We make our coffee with fairtrade coffee beans. Our beans are sourced ethically and environmentally, and certified by Rainforest Alliance, as part of our commitment to sustainability and biodiversity.</p>
+			</div>
+			<div class="col-12 col-md-6 parallax">
+				<img src="images/coffee2.jpg" alt="Picture of our coffee">
 			</div>
 		</div>
 	</div>

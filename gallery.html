@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   
   <!-- Custom CSS -->
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
@@ -32,47 +32,44 @@
 </head>
 <body>
 
-	<div class="topnav" id="myTopnav">
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="menu.html">Menu</a>
-		<a href="gallery.html" class="active">Gallery</a>
-		<a href="#contact">Contact</a>
-		<a class="nav-right" href="#"><i class="far fa-clock"></i>Make a reservation</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		<i class="fas fa-bars"></i>
-  		</a>
-	</div>
+	<ul class="topnav2" id="myTopnav">
+			<li><a href="index.html" title="Go to home page">Home</a></li>
+			<li><a href="about.html" title="Go to the about page">About</a></li>
+			<li><a href="index.html#menu" title="Go to the menu section on the home page">Menu</a></li>
+			<li><a href="gallery.html" class="active" title="Go to the gallery page">Gallery</a></li>
+			<li><a href="contact.html" title="Go to the contact">Contact</a></li>
+			<li><a class="nav-right" href="booking.html" title="Go to the booking page."><i class="far fa-clock"></i>Make a reservation</a></li>
+	</ul>
 
 	<div class="container" id="gallery">
-		<h1>Gallery</h1>
+		<h1 class="heading">Gallery</h1>
 		<div class="row2"> 
 			<div class="column2">
-			    <img src="images/IMG_0010.jpg" width="100%">
+			    <img src="images/icecream-sandwich.jpg" width="100%" alt="Photo of Ice cream sandwich with Maltesers and strawberries">
 			    <img src="https://images.unsplash.com/photo-1523145149804-5d8e0c044753?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=98b382f7de7f2af1ce6b58e98d863734&auto=format&fit=crop&w=2550&q=80" width="100%">
-			    <img src="images/IMG_0267.jpg" width="100%">
+			    <img src="images/seafood-basket.jpg" width="100%" alt="Photo of Seafood basket and salad">
 			    <img src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9ff8655a257a1570a467770fc0f75bb9&auto=format&fit=crop&w=1950&q=80" width="100%">
-			    <img src="images/IMG_9150-2.jpg" width="100%">
-			    <img src="images/IMG_9179.jpg" width="100%">
-			    <img src="images/IMG_9205.jpg" width="100%">
+			    <img src="images/thai-beef-salad.jpg" width="100%" alt="Photo of Thai beef salad">
+			    <img src="images/fig-toast.jpg" width="100%" alt="Photo of fig toast with a berry smoothie">
+			    <img src="images/nutella-waffles.jpg" width="100%" alt="Photo of Nutella waffles with coffee">
 			</div>
 			<div class="column2">
 			    <img src="https://images.unsplash.com/photo-1497888329096-51c27beff665?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81a4ea76e9cc47e5107a565e69883e34&auto=format&fit=crop&w=1951&q=80" width="100%">
 			    <img src="https://images.unsplash.com/photo-1532903460337-0d1b9a71b2c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f67e80ff86e5cfd3337e2952ac3da385&auto=format&fit=crop&w=1234&q=80" width="100%">
 			    <img src="https://images.unsplash.com/photo-1510279931157-4ca63af8a363?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e92d2b002ddb6ea63420326de6c733f8&auto=format&fit=crop&w=2700&q=80" width="100%">
-			    <img src="images/IMG_0206.jpg" width="100%">
-			    <img src="images/IMG_0723.jpg" width="100%">
-			    <img src="images/IMG_9981.jpg" width="100%">
-			    <img src="images/IMG_9292.jpg" width="100%">
+			    <img src="images/chocolate-mousse.jpg" width="100%" alt="Photo of Chocolate mousse with strawberries">
+			    <img src="images/lamb-chop-and-wine.jpg" width="100%" alt="Photo of Lamb chop, mash potatoes and tomatoes with red wine">
+			    <img src="images/coffee2.jpg" width="100%" alt="Photo of a cup of fair trade coffee">
+			    <img src="images/thai-beef-salad2.jpg" width="100%" alt="Photo of Thai beef salad close up">
 			</div>
 			<div class="column2">
 			    <img src="https://images.unsplash.com/photo-1518091653999-278f46860620?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c2117c845c4872a2394cc064c60d3a6&auto=format&fit=crop&w=1234&q=80" width="100%">
 			    <img src="https://images.unsplash.com/photo-1519233991914-26a44330ccd7?ixlib=rb-0.3.5&s=6987f50cca5d3f29b33b5bf2977fc22d&auto=format&fit=crop&w=2550&q=80" width="100%">
-			    <img src="images/IMG_9634.jpg" width="100%">
-			    <img src="images/IMG_9290.jpg" width="100%">
-			    <img src="images/IMG_0095.jpg" width="100%">
+			    <img src="images/fajita.jpg" width="100%" alt="Photo of a fajita">
+			    <img src="images/burger-and-fries.jpg" width="100%" alt="Bacon burger with fries">
+			    <img src="images/pasta.jpg" width="100%" alt="pasta">
 			    <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b501bf3957585b28199e54ec4700806&auto=format&fit=crop&w=1234&q=80" width="100%">
-			    <img src="images/IMG_0038.jpg" width="100%">
+			    <img src="images/icecream-sandwich2.jpg" width="100%" alt="Photo of an ice cream sandwich with a cup of coffee and salad">
 			</div>
 		</div>
 	</div>

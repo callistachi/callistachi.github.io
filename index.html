@@ -23,7 +23,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	<!-- Custom CSS -->
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- JS -->
+	<script src="js/script.js"></script>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
@@ -31,36 +34,37 @@
 	    
 </head>
 <body>
-
 	<header>
-		<div class="topnav" id="myTopnav">
-			<a href="index.html" class="active">Home</a>
-			<a href="about.html">About</a>
-			<a href="menu.html">Menu</a>
-			<a href="gallery.html">Gallery</a>
-			<a href="contact.html">Contact</a>
-			<a class="nav-right" href="#"><i class="far fa-clock"></i>Make a reservation</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fas fa-bars"></i>
-	  		</a>
-		</div>
+		<ul class="topnav2" id="myTopnav">
+			<li><a href="index.html" class="active" title="Go to home page">Home</a></li>
+			<li><a href="about.html" title="Go to the about page">About</a></li>
+			<li><a href="index.html#menu" title="Go to the menu section on the home page">Menu</a></li>
+			<li><a href="gallery.html" title="Go to the gallery page">Gallery</a></li>
+			<li><a href="contact.html" title="Go to the contact">Contact</a></li>
+			<li><a class="nav-right" href="booking.html" title="Go to the booking page."><i class="far fa-clock"></i>Make a reservation</a></li>
+		</ul>
 
-		<!-- <div class="nav2">
-			<ul>
-				<li class="item"><a href="index.html" class="active">Home</a></li>
-				<li class="item"><a href="">About</a></li>
-				<li class="item"><a href="">Menu</a></li>
-				<li class="item"><a href="">Gallery</a></li>
-				<li class="item"><a href="">Contact</a></li>
-				<a class="nav-right" href="#"><i class="far fa-clock"></i>Make a reservation</a>
-			</ul>
+		<!-- Scroll to top -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+
+		<!-- <div class="topnav d-none d-md-block" id="myTopnav">
+			<a href="index.html" class="active" title="Go to home page">Home</a>
+			<a href="about.html" title="Go to the about page">About</a>
+			<a href="#menu" title="Go to the menu section on the home page">Menu</a>
+			<a href="gallery.html" title="Go to the gallery page">Gallery</a>
+			<a href="contact.html" title="Go to the contact">Contact</a>
+			<a class="nav-right" href="#" title="Go to the booking page."><i class="far fa-clock"></i>Make a reservation</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fas fa-bars"></i>
+	  		</a>
 		</div> -->
 
 		<!-- HERO -->
 		<div class="hero-text">
 		    <h1>Zen Caf&eacute;</h1>
 		    <p class="lead">The ultimate fine dining experience.</p>
-		    <a href="about.html" role="button" class="btn btn-custom btn-lg">Learn more</a>
+		    <a href="about.html" title="Go to the about page" role="button" class="btn btn-custom btn-lg">Learn more</a>
 		</div>
 
 		<div class="scroll-down">
@@ -78,17 +82,261 @@
 		<img class="logo" src="images/inc_500.jpg" height="7%" width="7%" alt="">
 	</div>
 
+	<!-- MENU -->
+	<div class="container-fluid menu" id="menu">
+		<div class="container">
+			<div class="line-y"></div>
+			<h1 class="heading">Menu</h1>
+			
+			<!-- Breakfast -->
+			<div class="container menu-test">
+				<div class="row menu-heading">
+					<div class="col-4">
+						<h2>Breakfast</h2>
+					</div>
+					<div class="col-8">
+						<div class="line-x d-none d-md-block"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Smoothie Bowl</p>
+							<p class="menu-p2">Mixed berries, granola, chia seeds, honey</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Strawberry pancakes</p>
+							<p class="menu-p2">Pancakes, Maple syrup, cream, strawberries</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Avocado toast</p>
+							<p class="menu-p2">Sourdough, feta, avocado</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Ham and cheese toastie</p>
+							<p class="menu-p2">Ham, cheese, tomato</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Fig toast</p>
+							<p class="menu-p2">Figs, cottage cheese, honey on sourdough</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Apple cinnamon oats</p>
+							<p class="menu-p2">Apple, cinnamon, almond milk, oats, quinoa</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Eggs Benedict</p>
+							<p class="menu-p2">Sourdough, poached egg, hollandaise, ham</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Lunch -->
+			<div class="container menu-test">
+				<div class="row menu-heading">
+					<div class="col-4">
+						<h2>Lunch</h2>
+					</div>
+					<div class="col-8">
+						<div class="line-x d-none d-md-block"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Seafood basket</p>
+							<p class="menu-p2">Battered fish cocktails, prawn cutlets</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Crispy salmon</p>
+							<p class="menu-p2">Salmon, rocket, spinach and tomato salad</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Bacon burger</p>
+							<p class="menu-p2">Bacon, caramelised, onion, mushrooms</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Chicken fajitas</p>
+							<p class="menu-p2">Chicken, tomatoes, avocado, chilli, cabbage</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Thai beef salad</p>
+							<p class="menu-p2">Beef, chillies, peanuts, tomatoes, fish sauce</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Fish and chips</p>
+							<p class="menu-p2">Crispy battered Flathead and Calamari rings</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Spaghetti Bolognese</p>
+							<p class="menu-p2">Spaghetti, beef, basil, tomatoes, parmesan</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Dinner -->
+			<div class="container menu-test">
+				<div class="row menu-heading">
+					<div class="col-4">
+						<h2>Dinner</h2>
+					</div>
+					<div class="col-8">
+						<div class="line-x d-none d-md-block"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Porterhouse Steak</p>
+							<p class="menu-p2">Steak, tarragon butter, mushrooms, onions</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Gnocchi salad</p>
+							<p class="menu-p2">Gnocchi, spinach, tomatoes, chicken</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Pork chops with baked potato</p>
+							<p class="menu-p2">Pork chops, potatoes, onion, apple sauce</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Duck confit</p>
+							<p class="menu-p2">Duck confit, mushroom, grilled apples</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Dessert -->
+			<div class="container menu-test">
+				<div class="row menu-heading">
+					<div class="col-4">
+						<h2>Dessert</h2>
+					</div>
+					<div class="col-8">
+						<div class="line-x d-none d-md-block"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Chocolate mousse</p>
+							<p class="menu-p2">Chocolate mousse, cream strawberries</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Nutella waffles</p>
+							<p class="menu-p2">Waffles, Nutella, strawberries, Maltesers</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Passionfruit panna cotta</p>
+							<p class="menu-p2">Panna cotta, passionfruit, red wine syrup</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Crem&egrave; Br&ucirc;l&eacute;e</p>
+							<p class="menu-p2">Crem&egrave;, blueberries, almond sponge, almonds</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Beverages -->
+			<div class="container menu-test">
+				<div class="row menu-heading">
+					<div class="col-4">
+						<h2>Beverages</h2>
+					</div>
+					<div class="col-8">
+						<div class="line-x d-none d-md-block"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Coffee</p>
+							<p class="menu-p2">Premium fair trade coffee sourced from Italy</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Matcha latte</p>
+							<p class="menu-p2">Matcha, spirulina, premium Italian coffee</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Chai latte</p>
+							<p class="menu-p2">Cinnamon, almond milk, cardamom, vanilla</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Hot chocolate</p>
+							<p class="menu-p2">Hot chocolate, whipped cream, marshmallows</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Iced chocolate</p>
+							<p class="menu-p2">Iced chocolate, whipped cream, ice cream</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Orange juice</p>
+							<p class="menu-p2">Freshly squeezed</p>
+						</div>
+						<div class="menu-item">
+							<p class="menu-p">Green Smoothie</p>
+							<p class="menu-p2">Kale, cucumber, lime, green apple, ginger</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Wine -->
+			<div class="container menu-test">
+				<div class="row menu-heading">
+					<div class="col-4">
+						<h2>Wine</h2>
+					</div>
+					<div class="col-8">
+						<div class="line-x d-none d-md-block"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Chardonnay</p>
+							<p class="menu-p2">Almond, apple butter, lightly oaked</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="menu-item">
+							<p class="menu-p">Ros&eacute;</p>
+							<p class="menu-p2">Watermelon, rose, limes</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="download">
+				<a href="media/menu.pdf" role="button" class="btn-custom btn-rectangle" target="_blank" title="Download the menu as a pdf">Download</a>
+			</div>
+		</div>
+	</div>
+
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-12 col-sm-3">
 					<h3>Dine at Zen Caf&eacute;</h3>
 					<h4>Address</h4>
 					<h4 id="address">Zen Caf&eacute;<br>61 Farnell Street<br>
 					Tallwang, Sydney 2852<br>
 					Australia<h4>
 				</div>
-				<div class="col-6 newsletter">
+				<div class="col-12 col-sm-6 newsletter">
 					<h3>Newsletter sign up</h3>
 					<h4>Subscribe for exclusive offers</h4>
 					<form action="" id="newsletterform">
@@ -97,14 +345,14 @@
 					<p>By submitting this form, I agree to having my personal and contact information used for the purpose of marketing communications.</p>
 					<p>You can unsubscribe at any time.</p>
 				</div>
-				<div class="col-3">
+				<div class="col-12 col-md-3 social-media">
 					<h3>Follow us</h3>
 					<h4>Social media channels</h4>
-					<a href="#" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
-					<a href="#" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
-			        <a href="#" target="_blank" class="social"><i class="fab fa-facebook-f"></i></a>
-			        <a href="#" target="_blank" class="social"><i class="fab fa-google-plus-g"></i></a>
-			        <a href="#" target="_blank" class="social"><i class="fab fa-tripadvisor"></i></a>
+					<a href="#" target="_blank" class="social" title="Go to our Instagram page"><i class="fab fa-instagram"></i></a>
+					<a href="#" target="_blank" class="social" title="Go to our Twitter page"><i class="fab fa-twitter"></i></a>
+			        <a href="#" target="_blank" class="social" title="Go to our Facebook page"><i class="fab fa-facebook-f"></i></a>
+			        <a href="#" target="_blank" class="social" title="Go to our Google+ page"><i class="fab fa-google-plus-g"></i></a>
+			        <a href="#" target="_blank" class="social" title="Go to our Tripadvisor page"><i class="fab fa-tripadvisor"></i></a>
 				</div>
 			</div>
 		</div>
