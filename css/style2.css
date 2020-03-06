@@ -281,7 +281,7 @@ h4 {
 
 .p-underline {
     text-decoration: none;
-    box-shadow: inset 0 -.4em 0 rgba(53,232,198,0.75);
+    box-shadow: inset 0 -.4em 0 rgba(53,232,198,1);
     color: inherit;
 }
 
