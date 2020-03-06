@@ -42,6 +42,9 @@ section {
 	height: 100vh;
 	scroll-snap-align: start;
 	color: white;
+	/* display: block; */
+	display: flex;
+	align-items: center;
 }
 
 p {
@@ -83,10 +86,15 @@ h4 {
 	padding: 0;
 }
 
-.hero-inner {
+/* .hero-inner {
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
+} */
+
+.hero {
+	display: flex;
+	align-items: center;
 }
 
 .hero-inner h1 {
