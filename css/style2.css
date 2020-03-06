@@ -261,3 +261,7 @@ h3 {
 .col-md {
 	flex: 70%;
 }
+
+#roar {
+	margin-bottom: 0;
+}
