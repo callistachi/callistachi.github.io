@@ -361,6 +361,7 @@ h4 {
 	html {
 		scroll-snap-type: none;
 	}
+
 	html,body {
 		height: 100%;
 		width: 100%;
@@ -368,20 +369,31 @@ h4 {
 
 	section {
 		max-width: 100%;
-		margin: 0 2em;
-		padding: 0.2em;
+		/* margin: 0 1em; */
+		padding: 0 2em;
+		margin: 0;
+		text-align: center;
+		justify-content: center;
+		/* display: block; */
 	}
 
 	.hero {
-		padding: 0 2em;
-		text-align: center;
+		/* padding: 0 2em; */
+		/* text-align: center; */
+		/* justify-content: center; */
 	}
 
 	h1 {
 		font-size: 2em;
+		margin-bottom: 1em;
 	}
 
-	h2, .hero h2 {
+	h2, h3 {
+		font-size: 0.9em;
+		letter-spacing: 0.1em;
+	}
+
+	.hero h2 {
 		font-size: 1.3em;
 	}
 
@@ -391,7 +403,6 @@ h4 {
 	}
 
 	.hero a, .hero .btn-alt {
-		/* display: block; */
 		padding: 0 0;
 		margin: 0 0;
 		margin-right: 0.9em;
@@ -407,6 +418,8 @@ h4 {
 
 	#about-me img {
 		padding: 0;
-		margin: 0;
+		margin: 2em 0;
+		float: none;
+
 	}
 }
