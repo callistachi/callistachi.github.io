@@ -93,23 +93,6 @@ h4 {
 	align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-	/* For mobile phones: */
-	[class*="hero"] {
-		padding: 0 5em;
-		display: block;
-		justify-content: center;
-	}
-
-	section {
-		height: 100%;
-	}
-
-	p {
-		display: block;
-	}
-}
-
 .hero-inner h1 {
 	margin-top: 0;
 }
@@ -372,4 +355,58 @@ h4 {
 #contact a:hover, #contact a:focus, #contact a:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		scroll-snap-type: none;
+	}
+	html,body {
+		height: 100%;
+		width: 100%;
+	}
+
+	section {
+		max-width: 100%;
+		margin: 0 2em;
+		padding: 0.2em;
+	}
+
+	.hero {
+		padding: 0 2em;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2, .hero h2 {
+		font-size: 1.3em;
+	}
+
+	p {
+		display: block;
+		font-size: 1em;
+	}
+
+	.hero a, .hero .btn-alt {
+		/* display: block; */
+		padding: 0 0;
+		margin: 0 0;
+		margin-right: 0.9em;
+	}
+
+	.hero a {
+		margin-top: 2em;
+	}
+
+	.hero .btn-alt {
+		margin-top: 2em;
+	}
+
+	#about-me img {
+		padding: 0;
+		margin: 0;
+	}
 }
