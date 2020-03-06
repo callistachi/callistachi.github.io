@@ -73,6 +73,16 @@ h3 {
 	color: white;
 }
 
+h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.4em;
+	font-size: 6em;
+
+	margin: 1em 0;
+	padding: 0;
+}
+
 .hero-inner {
 	position: absolute;
 	top: 50%;
