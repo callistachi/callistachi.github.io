@@ -43,6 +43,29 @@ p {
 	font-size: 1.5em;
 	letter-spacing: 0.05em;
 	line-height: 1.8;
+	color: #F4CEFF;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.3em;
+	font-size: 4em;
+	line-height: 1.5;
+	margin-bottom: 0.3em;
+	margin-top: 0;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.4em;
+	font-size: 1.2em;
+	color: #35E8C6;
+}
+
+h3 {
+	color: white;
 }
 
 .hero-inner {
@@ -116,22 +139,15 @@ p {
 	color: #2E1C33;
 }
 
-h1 {
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 0.3em;
-	font-size: 4em;
-	line-height: 1.5;
-	margin-bottom: 0.3em;
-	margin-top: 0;
-}
-
 .hero h2 {
 	font-family: 'Playfair-Display', 'Times', serif;
+	text-transform: none;
 	font-style: italic;
 	font-weight: 500;
 	font-size: 2em;
 	margin: 0;
+	letter-spacing: normal;
+	color: white;
 }
 /*
 .btn-pill {
@@ -212,9 +228,36 @@ h1 {
 	height: auto;
 	float: right;
 	margin-left: 3em;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.about-me-text img:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 #about-me {
 	display: flex;
 	align-items: center;
+}
+
+#work-experience {
+	display: flex;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	margin-bottom: 2em;
+}
+
+.col-sm {
+	flex: 30%
+}
+
+.col-md {
+	flex: 70%;
 }
