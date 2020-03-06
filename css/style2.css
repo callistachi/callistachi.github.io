@@ -39,7 +39,9 @@ section {
 	padding: 0;
 	padding: 0 15em;
 	width: 100vw;
+	max-width: 100%;
 	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	scroll-snap-align: start;
 	color: white;
 	/* display: block; */
@@ -86,15 +88,26 @@ h4 {
 	padding: 0;
 }
 
-/* .hero-inner {
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-} */
-
 .hero {
 	display: flex;
 	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	[class*="hero"] {
+		padding: 0 5em;
+		display: block;
+		justify-content: center;
+	}
+
+	section {
+		display: block;
+	}
+
+	p {
+		display: block;
+	}
 }
 
 .hero-inner h1 {
