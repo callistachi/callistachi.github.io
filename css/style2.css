@@ -179,14 +179,25 @@ h3 {
 	margin-top: 4em;
 }
 
-.btn-pill:hover, .btn-alt:active, .btn-alt:focus {
+/* .btn-pill:hover, .btn-alt:active, .btn-alt:focus {
 	background-color: #2FA48E;
 	color: #2E1C33;
-}
+} */
 
+.btn-pill:hover, .btn-alt:active, .btn-alt:focus {
+	background-color: #004E51;
+	color: white;
+}
+/*
 .btn-main:hover, .btn-main:active, .btn-main:focus {
 	background-color: #2FA48E;
 	border: 2px solid #2FA48E;
+
+} */
+
+.btn-main:hover, .btn-main:active, .btn-main:focus {
+	background-color: #0A9F86;
+	border: 2px solid #0A9F86;
 
 }
 
