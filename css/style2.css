@@ -229,7 +229,6 @@ h4 {
 
 .btn-alt:hover, .btn-alt:active, .btn-alt:focus {
 	background-color: #FF5869;
-	/* background-image: linear-gradient(to right, #EB3349 0%, #F45C43 51%, #EB3349 100%) !important; */
 	color: #fff;
 	box-shadow: none;
 }
@@ -241,6 +240,13 @@ h4 {
 .hero .btn-main {
 	display: inline-block;
 	margin-right: 0.9em;
+}
+
+.hero-inner a i {
+	font-size: 1.5em;
+	vertical-align: middle;
+	padding-bottom: 3px;
+	padding-left: 8px;
 }
 
 .about-me-text {
