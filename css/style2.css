@@ -325,3 +325,8 @@ h4 {
 .underline2:hover:before, .underline2:focus:before, .underline2:active:before {
   right: 0;
 }
+
+#contact {
+	display: flex;
+	align-items: center;
+}
