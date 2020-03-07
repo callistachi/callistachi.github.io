@@ -232,10 +232,6 @@ h4 {
 	margin-right: 0.9em;
 }
 
-.hero br:first-of-type {
-	display: none;
-}
-
 .hero-inner a i {
 	font-size: 1.5em;
 	vertical-align: middle;
