@@ -421,3 +421,9 @@ h4 {
 		margin: 0.3em;
 	}
 }
+
+@media only screen and (max-width: 1500px) {
+	.hero br:first-of-type {
+		display: none;
+	}
+}
