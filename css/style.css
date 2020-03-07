@@ -136,12 +136,6 @@ section p:last-of-type {
 	transform: translateY(-8px);
 }
 
-.hero img {
-	display: inline;
-	margin-left: -22em;
-	margin-top: -45em;
-}
-
 .hero .underline {
 	background-color: transparent;
     text-decoration: none;
@@ -270,21 +264,42 @@ section p:last-of-type {
 	flex: 70%;
 }
 
-#work-experience {
+.work-experience-container {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.work-experience.rows {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.work-experience-rows h3:last-of-type {
+	margin-bottom: 0;
+}
+
+.work-experience-text, .work-experience-rows {
+	flex: 100%;
 }
 
 #work-experience .row {
 	display: flex;
+	width: inherit;
 	margin-bottom: 2em;
 }
 
 #work-experience .col-sm {
 	margin-left: 4em;
+	display: flex;
 }
 
-#roar {
+#work-experience .col-sm h2 {
+	margin-left: auto;
+}
+
+#work-experience .row:last-of-type {
 	margin-bottom: 0;
 }
 
@@ -297,6 +312,7 @@ section p:last-of-type {
   position: relative;
   overflow: hidden;
 }
+
 .underline2:before {
   content: "";
   position: absolute;
@@ -313,6 +329,7 @@ section p:last-of-type {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .underline2:hover:before, .underline2:focus:before, .underline2:active:before {
   right: 0;
 }
@@ -336,6 +353,13 @@ section p:last-of-type {
 #contact a:hover, #contact a:focus, #contact a:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 568px) {
+	.hero a, .btn-main, .hero .btn-alt {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -379,9 +403,10 @@ section p:last-of-type {
 		margin-bottom: 0;
 	}
 
-	.hero a, .hero .btn-alt {
+	.hero a, .hero .btn-alt, .hero .btn-main {
 		padding: 0 0;
 		margin-right: 0.9em;
+		margin-left: 0.9em;
 	}
 
 	.btn-pill {
@@ -416,6 +441,36 @@ section p:last-of-type {
 
 	#work-experience .col-sm {
 		margin-left: 0;
+	}
+
+	.social-links {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+	h1 {
+		font-size: 3em;
+	}
+
+	.hero h2 {
+		font-size: 1.7em;
+	}
+
+	h2, h3 {
+		font-size: 1em;
+		letter-spacing: 0.2em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	section {
+		padding: 0 4em;
+	}
+	.social-links {
+		display: none;
 	}
 }
 
