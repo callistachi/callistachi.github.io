@@ -235,7 +235,7 @@ h4 {
 .hero-inner a i {
 	font-size: 1.5em;
 	vertical-align: middle;
-	padding-bottom: 3px;
+	/* padding-bottom: 3px; */
 	padding-left: 8px;
 }
 
@@ -345,9 +345,9 @@ h4 {
 }
 
 @media only screen and (max-width: 768px) {
-	html {
+	/* html {
 		scroll-snap-type: none;
-	}
+	} */
 
 	html,body {
 		height: 100%;
@@ -356,23 +356,15 @@ h4 {
 
 	section {
 		max-width: 100%;
-		/* margin: 0 1em; */
 		padding: 0 2em;
 		margin: 0;
 		text-align: center;
 		justify-content: center;
-		/* display: block; */
-	}
-
-	.hero {
-		/* padding: 0 2em; */
-		/* text-align: center; */
-		/* justify-content: center; */
 	}
 
 	h1 {
 		font-size: 2em;
-		margin-bottom: 1em;
+		margin-bottom: 0.8em;
 	}
 
 	h2, h3 {
@@ -399,8 +391,21 @@ h4 {
 		margin-top: 2em;
 	}
 
+	.btn-pill {
+		margin-top: 1.5em;
+	}
+
 	.hero .btn-alt {
-		margin-top: 2em;
+		margin-top: 1em;
+	}
+
+
+	.col-sm {
+		flex: 40%
+	}
+
+	.col-md {
+		flex: 60%;
 	}
 
 	#about-me img {
@@ -410,7 +415,7 @@ h4 {
 	}
 
 	#work-experience .row {
-		margin-bottom: 0.5em;
+		margin-bottom: 0.9em;
 	}
 
 	#work-experience h2 {
