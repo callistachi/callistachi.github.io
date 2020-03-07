@@ -224,7 +224,7 @@ h4 {
 }
 
 .hero .btn-alt {
-	margin-left: 4em;
+	margin-left: 2em;
 }
 
 .hero .btn-main {
@@ -388,7 +388,7 @@ h4 {
 	}
 
 	.hero a {
-		margin-top: 2em;
+		margin-top: 3em;
 	}
 
 	.btn-pill {
@@ -398,7 +398,6 @@ h4 {
 	.hero .btn-alt {
 		margin-top: 1em;
 	}
-
 
 	.col-sm {
 		flex: 40%
