@@ -88,6 +88,10 @@ h4 {
 	padding: 0;
 }
 
+section p:last-of-type {
+	margin-bottom: 0;
+}
+
 .hero {
 	display: flex;
 	align-items: center;
@@ -153,19 +157,6 @@ h4 {
 	letter-spacing: normal;
 	color: white;
 }
-/*
-.btn-pill {
-	background-color: #35E8C6;
-	color: #17473E;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	height: 46px;
-	width: 220px;
-	border-radius: 100em;
-	border-style: none;
-	font-size: 9pt;
-} */
 
 .btn-pill {
 	text-decoration:none;
@@ -184,21 +175,10 @@ h4 {
 	margin-top: 4em;
 }
 
-/* .btn-pill:hover, .btn-alt:active, .btn-alt:focus {
-	background-color: #2FA48E;
-	color: #2E1C33;
-} */
-
 .btn-pill:hover, .btn-alt:active, .btn-alt:focus {
 	background-color: #004E51;
 	color: white;
 }
-/*
-.btn-main:hover, .btn-main:active, .btn-main:focus {
-	background-color: #2FA48E;
-	border: 2px solid #2FA48E;
-
-} */
 
 .btn-main:hover, .btn-main:active, .btn-main:focus {
 	background-color: #0A9F86;
@@ -272,7 +252,7 @@ h4 {
 }
 
 .col-sm {
-	flex: 30%
+	flex: 30%;
 }
 
 .col-md {
@@ -289,6 +269,9 @@ h4 {
 	margin-bottom: 2em;
 }
 
+#work-experience .col-sm {
+	margin-left: 4em;
+}
 
 #roar {
 	margin-bottom: 0;
@@ -381,18 +364,17 @@ h4 {
 		font-size: 0.9em;
 	}
 
+	section p:last-of-type {
+		margin-bottom: 0;
+	}
+
 	.hero a, .hero .btn-alt {
 		padding: 0 0;
-		margin: 0 0;
 		margin-right: 0.9em;
 	}
 
-	.hero a {
-		margin-top: 3em;
-	}
-
 	.btn-pill {
-		margin-top: 1.5em;
+		margin-top: 2.6em;
 	}
 
 	.hero .btn-alt {
@@ -419,6 +401,10 @@ h4 {
 
 	#work-experience h2 {
 		margin: 0.3em;
+	}
+
+	#work-experience .col-sm {
+		margin-left: 0;
 	}
 }
 
