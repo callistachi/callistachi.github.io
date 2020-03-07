@@ -169,17 +169,14 @@ h4 {
 }
 /*
 .btn-pill {
-	text-decoration:none;
+	background-color: #35E8C6;
 	color: #17473E;
-	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	line-height: 45px;
-	display: inline-block;
-	background-color: #35E8C6;
+	letter-spacing: 0.1em;
+	height: 46px;
+	width: 220px;
 	border-radius: 100em;
-<<<<<<< HEAD
-=======
 	border-style: none;
 	font-size: 9pt;
 } */
@@ -194,7 +191,6 @@ h4 {
 	display: inline-block;
 	background-color: #35E8C6;
 	border-radius: 100em;
->>>>>>> a60a86cd04036573f8a5197fb1ffe03b19461fd8
 	width: 220px;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -285,7 +281,7 @@ h4 {
 
 .p-underline {
     text-decoration: none;
-    box-shadow: inset 0 -.4em 0 rgba(53,232,198,.75);
+    box-shadow: inset 0 -.4em 0 rgba(53,232,198,1);
     color: inherit;
 }
 
