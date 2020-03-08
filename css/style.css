@@ -6,6 +6,7 @@ html {
 
 body {
 	background-color: #2E1C33;
+	position: relative;
 }
 
 body, html {
@@ -353,6 +354,28 @@ section p:last-of-type {
   transform: translateY(-8px);
 }
 
+/* space between */
+footer {
+	padding: inherit;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+footer .social-links {
+	flex-direction: row;
+	bottom: 0;
+	left: 0;
+	justify-content: center;
+	margin-bottom: 6%;
+}
+
+footer .social-links :not(:last-child) {
+	margin: 0;
+	margin-right: 2.5em;
+}
+
 @media only screen and (max-width: 568px) {
 	.hero a, .btn-main, .hero .btn-alt {
 		margin-left: 0;
@@ -361,10 +384,6 @@ section p:last-of-type {
 }
 
 @media only screen and (max-width: 768px) {
-	/* html {
-		scroll-snap-type: none;
-	} */
-
 	html,body {
 		height: 100%;
 		width: 100%;
@@ -449,8 +468,17 @@ section p:last-of-type {
 		margin-left: 0;
 	}
 
-	.social-links {
+	.hero .social-links {
 		display: none;
+	}
+
+	footer .social-links {
+		margin-bottom: 25%;
+	}
+
+	footer .social-links :not(:last-child) {
+		margin: 0;
+		margin-right: 1.5em;
 	}
 }
 
@@ -475,7 +503,8 @@ section p:last-of-type {
 	section {
 		padding: 0 4em;
 	}
-	.social-links {
+
+	.hero .social-links {
 		display: none;
 	}
 }
