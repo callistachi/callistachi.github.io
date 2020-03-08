@@ -434,12 +434,15 @@ section p:last-of-type {
 	}
 
 	#work-experience .row {
-		margin-bottom: 0.9rem;
+		margin-bottom: 2rem;
 	}
 
 	#work-experience h2 {
-		margin: 0.3em;
-		margin-left: 0;
+		margin: 0;
+	}
+
+	#work-experience h3 {
+		margin-top: 0.5em;
 	}
 
 	#work-experience .col-sm {
