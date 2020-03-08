@@ -394,7 +394,7 @@ section p:last-of-type {
 
 	p {
 		display: block;
-		font-size: 0.9em;
+		font-size: 0.9rem;
 	}
 
 	section p:last-of-type {
@@ -434,7 +434,7 @@ section p:last-of-type {
 	}
 
 	#work-experience .row {
-		margin-bottom: 0.9em;
+		margin-bottom: 0.9rem;
 	}
 
 	#work-experience h2 {
@@ -465,7 +465,7 @@ section p:last-of-type {
 	}
 
 	p {
-		font-size: 1em;
+		font-size: 1rem;
 	}
 
 	section {
