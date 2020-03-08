@@ -439,6 +439,7 @@ section p:last-of-type {
 
 	#work-experience h2 {
 		margin: 0.3em;
+		margin-left: 0;
 	}
 
 	#work-experience .col-sm {
