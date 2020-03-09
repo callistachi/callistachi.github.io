@@ -14,6 +14,23 @@ body, html {
 	padding: 0;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #241229;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.36);
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -24,10 +41,6 @@ button {
 
 a {
 	text-decoration: none;
-	color: white;
-}
-
-a:visited {
 	color: white;
 }
 
