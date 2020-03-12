@@ -3,6 +3,7 @@ html {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 body {

@@ -2,6 +2,7 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	scroll-snap-type: y mandatory;
+	overflow-x: hidden; //horizontal
 }
 
 body {
