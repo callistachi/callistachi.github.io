@@ -422,6 +422,42 @@ section p:last-of-type {
   transform: translateY(-8px);
 }
 
+#wave {
+	height: 0.8em;
+	// transform: rotate();
+	// animation: waveAnim .5s linear;
+	-webkit-animation: waveAnim 1.5s linear infinite;
+	animation: waveAnim 1.5s linear infinite;
+}
+
+@-webkit-keyframes waveAnim {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(90deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@keyframes waveAnim {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(90deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
 /* space between */
 footer {
 	padding: inherit;
