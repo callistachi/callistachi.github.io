@@ -46,10 +46,6 @@ body, html {
   background: rgba(255, 255, 255, 0.36);
 }
 
-button {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -255,6 +251,9 @@ section p:last-of-type {
   letter-spacing: 0.1em;
   border: 2px solid #35E8C6;
   margin-top: 4em;
+  -webkit-transition: background-color 2s linear, color .2s linear;
+  -webkit-transition: background-color .2s linear, color .2s linear;
+  transition: background-color .2s linear, color .2s linear;
 }
 
 .btn-pill:hover, .btn-alt:active, .btn-alt:focus {
