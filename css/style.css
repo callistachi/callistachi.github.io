@@ -578,6 +578,9 @@ footer .social-links :not(:last-child) {
   .hero h2 {
     font-size: 1.3em;
   }
+  .download-resume {
+    display: none;
+  }
   p {
     display: block;
     font-size: 0.9rem;
