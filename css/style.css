@@ -144,6 +144,7 @@ section p:last-of-type {
   margin: 0;
   position: absolute;
   right: 0;
+  padding-left: 0;
 }
 
 .nav-bar {
