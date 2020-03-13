@@ -135,7 +135,7 @@ section p:last-of-type {
 	margin-top: 0;
 }
 
-.social-links {
+.social-links, .nav-bar {
 	list-style: none;
 	display: inline-flex;
 	flex-direction: column;
@@ -143,6 +143,37 @@ section p:last-of-type {
 	margin: 0;
 	position: absolute;
 	right: 0;
+}
+
+.nav-bar {
+	left: 0;
+	top: 0;
+	flex-direction: row;
+}
+
+.download-resume {
+	display: inline-flex;
+	position: absolute;
+	top: 15vh;
+	right: 8vw;
+	padding: inherit;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.8rem;
+}
+
+.download-resume a {
+	color: rgba(255,255,255,0.5);
+}
+
+.download-resume a:hover {
+	color: #35E8C6;
+}
+
+.download-resume i {
+	margin-left: 0.3em;
+	font-size: 1.2em;
 }
 
 .social-links i {
@@ -397,15 +428,20 @@ footer {
 	position: absolute;
 	left: 0;
 	right: 0;
-}
-
-footer .social-links {
-	flex-direction: row;
+  }
+  
+  footer .social-links {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
 	bottom: 0;
 	left: 0;
-	justify-content: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
 	margin-bottom: 6%;
-}
+  }
 
 footer .social-links :not(:last-child) {
 	margin: 0;
@@ -507,6 +543,10 @@ footer .social-links :not(:last-child) {
 	.hero .social-links {
 		display: none;
 	}
+
+	// footer .social-links {
+	// 	margin-bottom: 25%;
+	// }
 
 	footer .social-links {
 		margin-bottom: 25%;
