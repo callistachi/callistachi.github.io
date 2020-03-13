@@ -501,11 +501,31 @@ section p:last-of-type {
 
 /* space between */
 footer {
-  padding: inherit;
+  padding: 0;
   margin: 0;
   position: absolute;
   left: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 9%;
+  text-align: center;
+  font-size: 1em;
+}
+
+footer p i {
+  color: #35E8C6;
+  margin: 0 0.3em;
 }
 
 footer .social-links {
