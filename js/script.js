@@ -23,13 +23,6 @@ ScrollReveal().reveal('#contact', {delay: 300});
 
 const cursor = document.querySelector('.cursor');
 const cursor_outline = document.querySelector('.cursor-outline');
-// var hoverItems = document.querySelector('.hover-item');
-// const hoverItems = document.getElementsByClassName('hover-item');
-// const hoverItems = document.getElementsByClassName('hover-test');
-// const hoverItems = document.getElementsByTagName("a");
-// const target = $(event.target);
-// const isLinkTag = target.is('a');
-// const isHovered = cursor.hasClass('cursor-hover');
 
 document.addEventListener('mousemove', e => {
   cursor.setAttribute("style", "top: "+(e.pageY - 5)+"px; left: "+(e.pageX - 5)+"px;");
@@ -38,14 +31,6 @@ document.addEventListener('mousemove', e => {
 document.addEventListener('mousemove', e => {
   cursor_outline.setAttribute("style", "top: "+(e.pageY - 25)+"px; left: "+(e.pageX - 25)+"px;");
 })
-
-document.addEventListener('click', () => {
-  cursor.classList.add("cursor-click");
-
-  setTimeout(() => {
-    cursor.classList.remove("cursor-click");
-  }, 300)
-}) 
 
 let hover_items = [...document.getElementsByClassName('hover-item')];
 
@@ -65,6 +50,14 @@ hover_items = hover_items.map((child,index) => {
     cursor.classList.remove("cursor-hover");
   })
   return child;
+})
+
+document.addEventListener('click', () => {
+  cursor.classList.add("cursor-click");
+
+  setTimeout(() => {
+    cursor.classList.remove("cursor-click");
+  }, 300)
 })
 
 particlesJS("particles-js", {
