@@ -1,10 +1,10 @@
-* {
+/* * {
     cursor: unset;
 }
 
 a {
     cursor: pointer;
-}
+} */
 
 html {
     scroll-snap-type: none;
@@ -13,7 +13,6 @@ html {
 header {
     height: 90px;
     padding: 0 15em;
-    /* background: black; */
     display: flex;
 }
 
@@ -37,42 +36,57 @@ h3 {
     font-size: 2rem;
 }
 
-#brand {
-    padding: 15px 5px;
+nav {
+    width: 100%;
+    background-color: none;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
-.nav-container {
+.logo {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    color: #35E8C6;
+}
+
+.nav-item:hover a {
+color: #35E8C6;
+}
+
+.logo img {
+    width: 175px;
+    vertical-align: middle;
+}
+
+.navbar {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
 }
 
-.nav-container  ul {
-    list-style-type: none;
-    padding-left: 0;
+.nav-links {
     display: flex;
-}
-
-.nav-container  li {
-    font-size: 16px;
-    padding: 15px 5px;
-    white-space: nowrap;
-    display: inline;
-}
-
-#logo {
-    order: 0;
-    flex: 1;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.item {
-    display: block;
-    width: auto;
-    order: 1;
 }
 
 section {
@@ -92,6 +106,10 @@ div {
 
 .project-main {
     text-align: center;
+}
+
+.project-name {
+    color: #35E8C6;
 }
 
 .project-sub {
@@ -115,4 +133,9 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    margin-top: 10em;
+}
+
+.cursor, .cursor-outline, .particles-js {
+    margin: 0;
 }
