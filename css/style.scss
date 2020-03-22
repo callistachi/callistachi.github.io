@@ -131,6 +131,10 @@ section p:last-of-type {
 	margin-top: 0;
 }
 
+.hero-bot {
+	display: none;
+}
+
 .social-links, .nav-bar {
 	list-style: none;
 	display: inline-flex;
@@ -685,10 +689,191 @@ footer .social-links :not(:last-child) {
 }
 
 @media only screen and (min-width: 768px) {
+	// * {
+	// 	cursor: none;
+	// }
+	// // Cursor
+	// .cursor {
+	// 	width: 10px;
+	// 	height: 10px;
+	// 	background-color: #35E8C6;
+	// 	border-radius: 50%;
+	// 	position: absolute;
+	// 	z-index: 300;
+	// }
+
+	// .cursor, .cursor-outline {
+	// 	pointer-events: none;
+	// }
+
+	// .cursor-outline {
+	// 	width: 50px;
+	// 	height: 50px;
+	// 	position: absolute;
+	// 	background-color: black;
+	// 	border-radius: 50%;
+	// 	opacity: .3;
+	// 	transition-duration: 150ms;
+	// 	transition-timing-function: ease-out;
+	// 	z-index: 290;
+	// }
+
+	// .cursor-outline-hover {
+	// 	// animation: cursor-hoverAnim .5s forwards;
+	// 	background-color: rgba(255,255,255,0);
+	// 	transform: scale(1.3);
+	// 	border: 1px solid white!important;
+	// 	opacity: 1;
+	// }
+
+	// .cursor-hover {
+	// 	background-color: white;
+	// }
+
+	// .cursor-click {
+	// 	background: #FF5869;
+	// 	animation: cursor-clickAnim .6s forwards;
+	// }
+
+	// @keyframes cursor-clickAnim {
+	// 	from {
+	// 		transform: scale(1);
+	// 	}
+	// 	to {
+	// 		transform: scale(1.8);
+	// 	}
+	// }
+
+	.hero-bot {
+		display: flex;
+		position: absolute;
+		align-self: flex-end;
+		justify-content: center;
+		text-align: center;
+		left: 0;
+		right: 0;
+		padding-bottom: 2%;
+		opacity: 0.2;
+	}
+
+	.hero-bot h3 {
+		font-size: 0.6rem;;
+		line-height: 1.3rem;
+	}
+
+// Animations
+@-webkit-keyframes scroll-ani {
+	0% {
+	  opacity: 1;
+	  top: 29%;
+	}
+	15% {
+	  opacity: 1;
+	  top: 40%;
+	}
+	50% {
+	  opacity: 0;
+	  top: 40%;
+	}
+	100% {
+	  opacity: 0;
+	  top: 29%;
+	}
+  }
+  
+  @-moz-keyframes scroll-ani {
+	0% {
+	  opacity: 1;
+	  top: 29%;
+	}
+	15% {
+	  opacity: 1;
+	  top: 40%;
+	}
+	50% {
+	  opacity: 0;
+	  top: 40%;
+	}
+	100% {
+	  opacity: 0;
+	  top: 29%;
+	}
+  }
+  
+  @keyframes scroll-ani {
+	0% {
+	  opacity: 1;
+	  top: 29%;
+	}
+	15% {
+	  opacity: 1;
+	  top: 40%;
+	}
+	50% {
+	  opacity: 0;
+	  top: 40%;
+	}
+	100% {
+	  opacity: 0;
+	  top: 29%;
+	}
+  }
+  
+  // Mouse & Message Styles
+  
+  // The Scroll Link
+  .mouse-scroll {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7F8C8D;
+	color: #FFF;
+	letter-spacing: 2px;
+	// margin-top: 10%;
+	text-decoration: none;
+	overflow: hidden;
+	
+	// The Mouse
+	.mouse {
+	  position: relative;
+	  display: block;
+	  width: 28px;
+	  height: 43px;
+	  margin: 0 auto 20px;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  border: 1px solid #FFF;
+	  border-radius: 23px;
+	  
+	  // Scroll Indicator
+	  .mouse-movement { 
+		position: absolute;
+		display: block;
+		top: 29%;
+		left: 50%;
+		width: 6px;
+		height: 6px;
+		margin: -3px 0 0 -3px;
+		background: #FFF;
+		border-radius: 50%;
+		-webkit-animation: scroll-ani 4s linear infinite;
+		-moz-animation: scroll-ani 4s linear infinite;
+		animation: scroll-ani 4s linear infinite;
+	  }
+	  
+	}
+  }
+
+}
+	
+@-moz-document url-prefix() {
 	* {
 		cursor: none;
 	}
-	// Cursor
+	
+    // Cursor
 	.cursor {
 		width: 10px;
 		height: 10px;
@@ -740,4 +925,7 @@ footer .social-links :not(:last-child) {
 		}
 	}
 
+	.hero-bot h3 {
+		display: none;
+	}
 }
