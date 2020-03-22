@@ -23,6 +23,7 @@ ScrollReveal().reveal('#contact', {delay: 300});
 
 const cursor = document.querySelector('.cursor');
 const cursor_outline = document.querySelector('.cursor-outline');
+const heart = document.querySelector('#heart');
 
 document.addEventListener('mousemove', e => {
   cursor.setAttribute("style", "top: "+(e.pageY - 5)+"px; left: "+(e.pageX - 5)+"px;");
@@ -58,6 +59,10 @@ document.addEventListener('click', () => {
   setTimeout(() => {
     cursor.classList.remove("cursor-click");
   }, 300)
+})
+
+document.addEventListener('click', () => {
+  heart.classList.toggle("heart-active");
 })
 
 particlesJS("particles-js", {

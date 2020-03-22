@@ -529,12 +529,23 @@ footer p {
 footer p i {
   color: #35E8C6;
   margin: 0 0.3em;
-  -webkit-transition: color 2s linear, color .2s linear;
-  -webkit-transition: color .2s linear, color .2s linear;
-  transition: color .2s linear, color .2s linear;
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
 }
 
 footer p i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer p i:focus, footer p i:active, footer p i:visited {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.heart-active {
   color: #FF5869;
 }
 
