@@ -685,7 +685,7 @@ footer .social-links :not(:last-child) {
 }
 
 @media only screen and (max-width: 1500px) {
-	.hero br:first-of-type {
+	.hero .hero-inner br:first-of-type {
 		display: none;
 	}
 }
