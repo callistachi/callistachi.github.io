@@ -1,0 +1,118 @@
+* {
+    cursor: unset;
+}
+
+a {
+    cursor: pointer;
+}
+
+html {
+    scroll-snap-type: none;
+}
+
+header {
+    height: 90px;
+    padding: 0 15em;
+    /* background: black; */
+    display: flex;
+}
+
+h1 {
+    letter-spacing: initial;
+    font-size: 5rem;
+    text-transform: none;
+}
+
+h2 {
+    text-transform: none;
+    font-size: 4rem;
+    letter-spacing: initial;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 2rem;
+}
+
+#brand {
+    padding: 15px 5px;
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-container  ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+.nav-container  li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+    display: inline;
+}
+
+#logo {
+    order: 0;
+    flex: 1;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.item {
+    display: block;
+    width: auto;
+    order: 1;
+}
+
+section {
+	margin: 0;
+	padding: 0 15em;
+	width: 100vw;
+	max-width: 100%;
+	height: auto;
+	color: white;
+	display: block;
+}
+
+div {
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+}
+
+.project-main {
+    text-align: center;
+}
+
+.project-sub {
+    font-size: 2rem;
+    color: white;
+    text-transform: none;
+    letter-spacing: initial;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.project-main img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: inherit;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}

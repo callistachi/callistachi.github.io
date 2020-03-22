@@ -441,6 +441,26 @@ section p:last-of-type {
   right: 0;
 }
 
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+#zen-cafe {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,8 +491,8 @@ section p:last-of-type {
 
 #wave {
   height: 0.8em;
-  -webkit-animation: waveAnim 1.5s ease-in-out infinite;
-  animation: waveAnim 1.5s ease-in-out infinite;
+  -webkit-animation: waveAnim 1.5s linear infinite;
+  animation: waveAnim 1.5s linear infinite;
 }
 
 @-webkit-keyframes waveAnim {
@@ -502,7 +522,6 @@ section p:last-of-type {
   }
 }
 
-/* space between */
 footer {
   padding: 0;
   margin: 0;

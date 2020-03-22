@@ -405,6 +405,19 @@ section p:last-of-type {
   right: 0;
 }
 
+// Projects
+#projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+}
+
+#zen-cafe {
+	flex-wrap: wrap;
+}
+
 #contact {
 	display: flex;
 	align-items: center;
@@ -428,8 +441,8 @@ section p:last-of-type {
 
 #wave {
 	height: 0.8em;
-	-webkit-animation: waveAnim 1.5s ease-in-out infinite;
-	animation: waveAnim 1.5s ease-in-out infinite;
+	-webkit-animation: waveAnim 1.5s linear infinite;
+	animation: waveAnim 1.5s linear infinite;
 }
 
 @-webkit-keyframes waveAnim {
@@ -459,33 +472,6 @@ section p:last-of-type {
 		transform: rotate(0deg);
 	}
 }
-
-/* space between */
-// footer {
-// 	padding: inherit;
-// 	margin: 0;
-// 	position: absolute;
-// 	left: 0;
-// 	right: 0;
-//   }
-  
-//   footer .social-links {
-// 	-webkit-box-orient: horizontal;
-// 	-webkit-box-direction: normal;
-// 		-ms-flex-direction: row;
-// 			flex-direction: row;
-// 	bottom: 0;
-// 	left: 0;
-// 	-webkit-box-pack: center;
-// 		-ms-flex-pack: center;
-// 			justify-content: center;
-// 	margin-bottom: 6%;
-//   }
-
-// footer .social-links :not(:last-child) {
-// 	margin: 0;
-// 	margin-right: 2.5em;
-// }
 
 footer {
 	// padding: inherit;

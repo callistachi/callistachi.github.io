@@ -34,6 +34,7 @@ document.addEventListener('mousemove', e => {
 })
 
 let hover_items = [...document.getElementsByClassName('hover-item')];
+let a_tags = [...document.querySelectorAll('a')];
 
 hover_items = hover_items.map((child,index) => {
   child.addEventListener('mouseenter', (e) => {
@@ -45,6 +46,24 @@ hover_items = hover_items.map((child,index) => {
 })
 
 hover_items = hover_items.map((child,index) => {
+  child.addEventListener('mouseleave', (e) => {
+    console.log(e.target)
+    cursor_outline.classList.remove("cursor-outline-hover");
+    cursor.classList.remove("cursor-hover");
+  })
+  return child;
+})
+
+a_tags = a_tags.map((child,index) => {
+  child.addEventListener('mouseenter', (e) => {
+    console.log(e.target)
+    cursor_outline.classList.add("cursor-outline-hover");
+    cursor.classList.add("cursor-hover");
+  })
+  return child;
+})
+
+a_tags = a_tags.map((child,index) => {
   child.addEventListener('mouseleave', (e) => {
     console.log(e.target)
     cursor_outline.classList.remove("cursor-outline-hover");
