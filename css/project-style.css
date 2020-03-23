@@ -95,8 +95,9 @@ color: #35E8C6;
 } */
 
 header {
-    position: static;
-    margin-top: 2rem;
+    /* position: static;
+    margin-top: 6vh; */
+    height: 0;
 }
 
 
@@ -129,6 +130,7 @@ div {
 
 .project-name {
     color: #35E8C6;
+    margin-top: 13rem;
 }
 
 .project-sub {

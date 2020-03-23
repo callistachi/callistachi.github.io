@@ -131,12 +131,13 @@ header {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	top: 2rem;
+	top: 6vh;
 	display: inline-flex;
 	height: 1rem;
+	align-items: center;
 }
 
-header a, header ul {
+header ul {
 	height: 1rem;
 }
 
@@ -146,7 +147,7 @@ header a, header ul {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 	font-size: 1.5rem;
-	margin: 16px 0;
+	// margin: 16px 0;
 	-webkit-transition: color .2s linear;
 	-moz-transition: color .2s linear;
 	-o-transition: color .2s linear;
@@ -169,7 +170,7 @@ header a, header ul {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .nav-item:hover {
