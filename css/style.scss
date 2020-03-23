@@ -122,6 +122,72 @@ section p:last-of-type {
 	margin-bottom: 0;
 }
 
+// Nav
+header {
+    width: 100%;
+    background-color: none;
+	position: absolute;
+	padding: 0 15em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 2rem;
+	display: inline-flex;
+	height: 1rem;
+}
+
+header a, header ul {
+	height: 1rem;
+}
+
+.brand {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+	font-size: 1.5rem;
+	margin: 16px 0;
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+	-o-transition: color .2s linear;
+	transition: color .2s linear;
+}
+
+.brand:hover {
+	color: #35E8C6;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    color: #35E8C6;
+}
+
+.nav-item:hover a {
+color: #35E8C6;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+}
+
 .hero {
 	display: flex;
 	align-items: center;
@@ -144,12 +210,6 @@ section p:last-of-type {
 	position: absolute;
 	right: 0;
 	padding-left: 0;
-}
-
-.nav-bar {
-	left: 0;
-	top: 0;
-	flex-direction: row;
 }
 
 .download-resume {
@@ -411,11 +471,73 @@ section p:last-of-type {
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	text-align: center;
+	// text-align: center;
 }
 
-#zen-cafe {
+.projects-inner {
+	width: 100%;
+}
+
+.row-projects {
+	display: flex;
 	flex-wrap: wrap;
+	// padding: 0 4px;
+}
+
+.row-projects:first-of-type {
+	padding-left: 0;
+}
+
+.row-projects:last-of-type {
+	padding-right: 0;
+}
+
+.col-projects {
+	flex: 33.3%;
+	max-width: 33.3%;
+	padding: 0 4px;
+}
+
+.col-projects:first-of-type {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.col-projects:last-of-type {
+	padding-right: 0;
+}
+
+.col-projects img {
+	// margin: 8px 0;
+	vertical-align: middle;
+}
+
+.row-projects h3:first-of-type {
+	margin-bottom: 3em;
+}
+
+figure {
+	overflow: hidden;
+	// height: 100%;
+	// width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 #contact {

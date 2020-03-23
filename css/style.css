@@ -114,6 +114,75 @@ section p:last-of-type {
   margin-bottom: 0;
 }
 
+header {
+  width: 100%;
+  background-color: none;
+  position: absolute;
+  padding: 0 15em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 1rem;
+}
+
+header a, header ul {
+  height: 1rem;
+}
+
+.brand {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  margin: 16px 0;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.brand:hover {
+  color: #35E8C6;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+}
+
+.nav-item:hover {
+  color: #35E8C6;
+}
+
+.nav-item:hover a {
+  color: #35E8C6;
+}
+
+.navbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,15 +214,6 @@ section p:last-of-type {
   position: absolute;
   right: 0;
   padding-left: 0;
-}
-
-.nav-bar {
-  left: 0;
-  top: 0;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .download-resume {
@@ -453,12 +513,74 @@ section p:last-of-type {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
-  text-align: center;
 }
 
-#zen-cafe {
+.projects-inner {
+  width: 100%;
+}
+
+.row-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.row-projects:first-of-type {
+  padding-left: 0;
+}
+
+.row-projects:last-of-type {
+  padding-right: 0;
+}
+
+.col-projects {
+  -webkit-box-flex: 33.3%;
+      -ms-flex: 33.3%;
+          flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.col-projects:first-of-type {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.col-projects:last-of-type {
+  padding-right: 0;
+}
+
+.col-projects img {
+  vertical-align: middle;
+}
+
+.row-projects h3:first-of-type {
+  margin-bottom: 3em;
+}
+
+figure {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+figure:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.hover01 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 #contact {
