@@ -8,4 +8,4 @@
 - [ ] Link resume
 - [ ] Minify entire site
 - [ ] Add loading screen
-- [ ] Make nav consistent across project page and index
+- [X] Make nav consistent across project page and index

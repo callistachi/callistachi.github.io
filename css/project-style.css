@@ -36,7 +36,7 @@ h3 {
     font-size: 2rem;
 }
 
-nav {
+/* nav {
     width: 100%;
     background-color: none;
     padding-left: 30px;
@@ -74,11 +74,6 @@ nav {
 color: #35E8C6;
 }
 
-.logo img {
-    width: 175px;
-    vertical-align: middle;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -87,6 +82,11 @@ color: #35E8C6;
 
 .nav-links {
     display: flex;
+} */
+
+header {
+    position: static;
+    margin-top: 2rem;
 }
 
 section {
