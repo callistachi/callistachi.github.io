@@ -16,6 +16,16 @@ header {
     display: flex;
 }
 
+body {
+    position: initial;
+    margin: 0;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
 h1 {
     letter-spacing: initial;
     font-size: 5rem;
@@ -87,6 +97,15 @@ color: #35E8C6;
 header {
     position: static;
     margin-top: 2rem;
+}
+
+
+.nav-item:hover {
+    color: #35E8C6;
+}
+
+.nav-item:hover a {
+    color: #35E8C6;
 }
 
 section {
