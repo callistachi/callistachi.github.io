@@ -929,7 +929,7 @@ footer .social-links :not(:last-child) {
 
 }
 	
-@-moz-document url-prefix() {
+@media screen and (-moz-document url-prefix()) {
 	* {
 		cursor: none;
 	}
