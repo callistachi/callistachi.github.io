@@ -163,13 +163,11 @@ header ul {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
 }
 
-.nav-item:hover {
-  color: #35E8C6;
-}
-
-.nav-item:hover a {
+.nav-item a:hover {
   color: #35E8C6;
 }
 
@@ -829,6 +827,9 @@ footer .social-links :not(:last-child) {
 
 @media only screen and (max-width: 1500px) {
   .hero .hero-inner br:first-of-type {
+    display: none;
+  }
+  header {
     display: none;
   }
 }
