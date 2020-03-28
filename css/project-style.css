@@ -10,11 +10,11 @@ html {
     scroll-snap-type: none;
 }
 
-header {
+/* header {
     height: 90px;
     padding: 0 15em;
     display: flex;
-}
+} */
 
 body {
     position: initial;
@@ -97,7 +97,7 @@ color: #35E8C6;
 header {
     /* position: static;
     margin-top: 6vh; */
-    height: 0;
+    /* height: 0; */
 }
 
 
@@ -148,6 +148,12 @@ div {
     width: 100%;
     margin: auto;
     padding: inherit;
+}
+
+.project-inner p {
+    color: white;
+    letter-spacing: initial;
+    font-size: 1.3rem;
 }
 
 footer {
