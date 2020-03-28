@@ -109,6 +109,14 @@ header {
     color: #35E8C6;
 }
 
+.nav-links li:last-of-type a {
+	padding-right: 0;
+}
+
+nav div {
+    margin: 0;
+}
+
 section {
 	margin: 0;
 	padding: 0 15em;
