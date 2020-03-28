@@ -141,8 +141,8 @@ header ul {
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	font-size: 1.5rem;
-	-webkit-transition: color .2s linear;
-	transition: color .2s linear;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
 }
 
 .brand:hover {
@@ -162,13 +162,13 @@ header ul {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
-  -webkit-transition: color .2s linear;
-  transition: color .2s linear;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
-/* .nav-item a:last-of-type {
+.nav-links li:last-of-type {
 	padding-right: 0;
-} */
+}
 
 .nav-item a:hover {
   color: #35E8C6;
@@ -186,6 +186,144 @@ header ul {
   display: flex;
 }
 
+/* HAMBURGER MENU */
+nav {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    color: #35E8C6;
+    text-decoration: none;
+  }
+  
+  #menuToggle {
+      display: block;
+      position: relative;
+      top: 50px;
+      margin-left: 50px;
+      z-index: 1;
+  
+      -webkit-user-select: none;
+      user-select: none;
+  }
+  
+  #menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+  
+      -webkit-touch-callout: none;
+  }
+  
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+  
+      background: rgba(255, 255, 255, 0.5);
+  
+      z-index: 1;
+  
+      transform-origin: 4px 0px;
+  
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+      transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #978e99;
+  }
+  
+  /*
+   * Hide middle line on transform
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Last line go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #hamburgerMenu {
+      position: absolute;
+      width: 350px;
+      height: 102.1vh;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+  
+      background: #1a111c;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+  
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+  
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #hamburgerMenu, .active {
+      color: #35E8C6;
+  }
+  
+  #hamburgerMenu li {
+    padding: 15px 0;
+    font-size: 22px;
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  /* HERO SECTION */
+  
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +363,8 @@ header ul {
   display: inline-flex;
   position: absolute;
   top: 15vh;
-  right: 8vw;
+  /* right: 8vw; */
+  right: 0;
   padding: inherit;
   font-weight: 500;
   text-transform: uppercase;
@@ -535,14 +674,6 @@ header ul {
 	text-align: center;
 }
 
-/* .row-projects:first-of-type {
-  padding-left: 0;
-}
-
-.row-projects:last-of-type {
-  padding-right: 0;
-} */
-
 .col-projects {
 	-webkit-box-flex: 50%;
 		-ms-flex: 50%;
@@ -550,15 +681,6 @@ header ul {
 	max-width: 50%;
 	padding: 0;
 }
-/* 
-.col-projects:first-of-type {
-	padding-left: 0;
-	margin-left: 0;
-}
-
-.col-projects:last-of-type {
-	padding-right: 0;
-} */
 
 figure {
 	overflow: hidden;
@@ -769,9 +891,6 @@ footer .social-links :not(:last-child) {
   .hero h2 {
     font-size: 1.3em;
   }
-  .download-resume {
-    display: none;
-  }
   p {
     display: block;
     font-size: 0.9rem;
@@ -855,6 +974,11 @@ footer .social-links :not(:last-child) {
   section {
     padding: 0 4em;
   }
+
+  .download-resume {
+    display: none;
+  }
+
   .hero .social-links {
     display: none;
   }
@@ -864,8 +988,16 @@ footer .social-links :not(:last-child) {
   .hero .hero-inner br:first-of-type {
     display: none;
   }
-  header {
+  .navbar {
     display: none;
+  }
+
+  .download-resume {
+    display: none;
+  }
+  
+  nav {
+      display: initial;
   }
 }
 
@@ -966,54 +1098,60 @@ footer .social-links :not(:last-child) {
 }
 
 @-moz-document url-prefix() {
-  * {
-    cursor: none;
-  }
-  .cursor {
-    width: 10px;
-    height: 10px;
-    background-color: #35E8C6;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 300;
-  }
-  .cursor, .cursor-outline {
-    pointer-events: none;
-  }
-  .cursor-outline {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-color: black;
-    border-radius: 50%;
-    opacity: .3;
-    transition-duration: 150ms;
-    transition-timing-function: ease-out;
-    z-index: 290;
-  }
-  .cursor-outline-hover {
-    background-color: rgba(255, 255, 255, 0);
-    transform: scale(1.3);
-    border: 1px solid white !important;
-    opacity: 1;
-  }
-  .cursor-hover {
-    background-color: white;
-  }
-  .cursor-click {
-    background: #FF5869;
-    animation: cursor-clickAnim .6s forwards;
-  }
-  @keyframes cursor-clickAnim {
-    from {
-      transform: scale(1);
+    @media screen and (min-width: 1000px) {
+        * {
+            cursor: none;
+        }
+        .cursor {
+            width: 10px;
+            height: 10px;
+            background-color: #35E8C6;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 300;
+        }
+
+        .cursor, .cursor-outline {
+            pointer-events: none;
+        }
+        
+        .cursor-outline {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: black;
+            border-radius: 50%;
+            opacity: .3;
+            transition-duration: 150ms;
+            transition-timing-function: ease-out;
+            z-index: 290;
+        }
+          
+        .cursor-outline-hover {
+            background-color: rgba(255, 255, 255, 0);
+            transform: scale(1.3);
+            border: 1px solid white !important;
+            opacity: 1;
+        }
+
+          .cursor-hover {
+            background-color: white;
+        }
+
+        .cursor-click {
+            background: #FF5869;
+            animation: cursor-clickAnim .6s forwards;
+        } 
+        @keyframes cursor-clickAnim {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.8);
+            }
+        }
     }
-    to {
-      transform: scale(1.8);
-    }
-  }
   .hero-bot h3 {
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
