@@ -1000,6 +1000,10 @@ footer .social-links :not(:last-child) {
   nav {
       display: initial;
   }
+
+  #hamburgerMenu {
+      height: 102.6vh;
+  }
 }
 
 @media only screen and (min-width: 768px) {
