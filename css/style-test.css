@@ -204,8 +204,10 @@ nav a {
     color: #35E8C6;
     text-decoration: none;
   }
-  
-  #menuToggle {
+ 
+  /* SECOND HAMBURGER MENU */
+
+  /* #menuToggle {
       display: block;
       position: relative;
       top: 50px;
@@ -223,15 +225,12 @@ nav a {
       position: absolute;
       top: -7px;
       left: -5px;
-      opacity: 0; /* hide this */
-      z-index: 2; /* and place it over the hamburger */
+      opacity: 0; 
+      z-index: 2; 
   
       -webkit-touch-callout: none;
   }
   
-  /*
-   * Just a quick hamburger
-   */
   #menuToggle span {
       display: block;
       width: 33px;
@@ -248,9 +247,57 @@ nav a {
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
+  } */
+
+  .three {
+    display: none;
+    position: relative;
+    top: 50px;
+    margin-left: 50px;
   }
 
-  #menuToggle span:first-child {
+  #hamburger-1 {
+      position: relative;
+      display: inline-block;
+      padding-right: 50px;
+      z-index: 2;
+  }
+
+  .hamburger .line{
+    left: 0;
+    width: 35px;
+    height: 4px;
+    background-color: #978e99;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+
+  #hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(3px) rotate(45deg);
+    -ms-transform: translateY(3px) rotate(45deg);
+    -o-transform: translateY(3px) rotate(45deg);
+    transform: translateY(3px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-15px) rotate(-45deg);
+    -ms-transform: translateY(-15px) rotate(-45deg);
+    -o-transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
+  }
+
+  /* SECOND HAMBURGER MENU */
+
+  /* #menuToggle span:first-child {
       transform-origin: 0% 0%;
   }
   
@@ -258,35 +305,21 @@ nav a {
       transform-origin: 0% 100%;
   }
   
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
   #menuToggle input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
       background: #978e99;
   }
   
-  /*
-   * Hide middle line on transform
-   */
   #menuToggle input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
   }
   
-  /*
-   * Last line go the other direction
-   */
   #menuToggle input:checked ~ span:nth-last-child(2) {
       transform: rotate(-45deg) translate(0, -1px);
-  }
+  } */
   
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
   #hamburgerMenu {
       position: absolute;
       width: 350px;
@@ -314,10 +347,16 @@ nav a {
     font-size: 22px;
   }
   
-  /*
-   * And let's slide it in from the left
-   */
-  #menuToggle input:checked ~ ul {
+  /* SECOND HAMBURGER MENU */
+  /* #menuToggle input:checked ~ ul {
+    transform: none;
+  } */
+
+  .is-active2 {
+    transform: none;
+  }
+
+  #hamburgerMenu.is-active2 {
     transform: none;
   }
 
@@ -998,6 +1037,14 @@ footer .social-links :not(:last-child) {
   
   nav {
       display: initial;
+  }
+
+  .three {
+      display: block;
+  }
+
+  .hamburger:hover {
+      cursor: pointer;
   }
 }
 
