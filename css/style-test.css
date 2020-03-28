@@ -870,6 +870,11 @@ footer .social-links :not(:last-child) {
     height: 100%;
     width: 100%;
   }
+
+  #hamburgerMenu {
+      height: 105vh;
+  }
+
   section {
     max-width: 100%;
     padding: 0 2em;
