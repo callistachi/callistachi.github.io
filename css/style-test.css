@@ -166,7 +166,7 @@ header ul {
   transition: color .3s ease;
 }
 
-.nav-links li:last-of-type {
+.nav-links li:last-of-type a {
 	padding-right: 0;
 }
 
