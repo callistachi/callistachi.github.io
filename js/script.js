@@ -76,6 +76,13 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $(".nav-link").click(function(){
+    $(".hamburger").toggleClass("is-active");
+    $("#hamburgerMenu").toggleClass("is-active2");
+  });
+});
+
 $(document).on("click", function(e){
   if( 
     $(e.target).closest("#hamburgerMenu").length == 0 &&
