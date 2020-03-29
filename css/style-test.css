@@ -361,6 +361,16 @@ nav a {
     transform: none;
   }
 
+  /* Stop user from scrolling when hamburger menu open */
+  .position-fixed {
+      position: fixed;
+  }
+
+  /* Turn off particles when hamburger menu open */
+  .particles-off {
+      display: none;
+  }
+
   /* HERO SECTION */
   
 .hero {
