@@ -37,23 +37,21 @@
 		  <li class="nav-item"><a href="./#contact">Contact</a></li>
 		</ul>
 	</header>
-	
-	<!-- HAMBURGER MENU -->
-	<nav class="d-md-none hover-item" role="navigation">
-		<div id="menuToggle">
-			<input type="checkbox" />
-			<span></span>
-			<span></span>
-			<span></span>
-			<ul id="hamburgerMenu">
-				<a href="./" class="active" title="Go to the home page"><li>Home</li></a>
-				<a href="./#about-me" title="Go to the about section"><li>About</li></a>
-				<a href="./#work-experience" title="Go to the work experience section"><li>Work Experience</li></a>
-				<a href="./#projects" title="Go to the projects section"><li>Projects</li></a>
-				<a href="./#contact" title="Go to the contact"><li>Contact</li></a>
-				<a href="" title="Download resum&eacute;"><li>Download resum&eacute;</li></a>
-			</ul>
+
+	<nav class="three d-md-none hover-item" role="navigation">
+		<div class="hamburger hover-item" id="hamburger-1">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
 		</div>
+			<ul id="hamburgerMenu">
+				<a href="./" class="nav-link" title="Go to the home page"><li>Home</li></a>
+				<a href="./#about-me" class="nav-link" title="Go to the about section"><li>About</li></a>
+				<a href="./#work-experience" class="nav-link" title="Go to the work experience section"><li>Work Experience</li></a>
+				<a href="./#projects" class="nav-link" title="Go to the projects section"><li>Projects</li></a>
+				<a href="./#contact" class="nav-link" title="Go to the contact"><li>Contact</li></a>
+				<a href="./media/CallistaChiResume.pdf" class="nav-link" title="Download resum&eacute;"><li>Download resum&eacute;</li></a>
+			</ul>
 	</nav>
     
     <section id="zen-cafe">
@@ -78,13 +76,38 @@
         </div>
         
         <div class="challenge">
-            <h3>Challenge</h3>
-            <!-- Use cols and rows -->
+            
+            <div class="row">
+				<div class="col-sm">
+					<h3>Challenge</h3>
+				</div>
+
+				<div class="col-md">
+					<p>A website of a brand was to be created using HTML and CSS. The website had to demonstrate good UX design principles and follow WCAG guidelines.</p>
+				</div>
+			</div>
+
         </div>
 
-        <div class="results">
-            <h3>Results</h3>
-            <!-- Use cols and rows -->
+        <div class="solution">
+            <div class="row">
+				<div class="col-sm">
+					<h3>Solution</h3>
+				</div>
+
+				<div class="col-md">
+					<p>I chose a simple colour palette that fulfilled WCAG guidelines in order to convey a luxury image. The serif font, Playfair Display was paired with Montserrat which enhances this image.</p>
+
+					<p>I coded the site mostly with HTML and CSS, with a little JavaScript and used the Bootstrap grid system to make use of the rows and columns classes automatically defined in the Bootstrap stylesheet.</p>
+
+					<p>On the homepage, a hero section takes up 100&percnt; of the viewport. Hero images have become very trendy over the past few years as it immediately draws the user's attention and allows a brand to clearly define their market offering. Furthermore, a call to action button is placed right in the center of the hero image which takes the user to the About page.</p>
+
+					<p>The gallery section of the site was created using custom styles for greater customisability. While overriding Bootstrap styles was a possibility, I chose to save time and define the styles from scratch.</p>
+
+					<p>The featured section uses CSS3 animations to achieve the 'fade colours in on hover' effect that has become a trend in many organisation's websites recently.</p>
+				</div>
+			</div>
+
         </div>
     </section>
 

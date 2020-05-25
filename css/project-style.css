@@ -5,6 +5,10 @@
 a {
     cursor: pointer;
 } */
+:root {
+    --main-p: #F4CEFF;
+    --teal: #35E8C6;
+}
 
 html {
     scroll-snap-type: none;
@@ -26,6 +30,10 @@ canvas {
     vertical-align: bottom;
 }
 
+p {
+    color: var(--main-p);
+}
+
 h1 {
     letter-spacing: initial;
     font-size: 5rem;
@@ -45,61 +53,6 @@ h3 {
     letter-spacing: 0;
     font-size: 2rem;
 }
-
-/* nav {
-    width: 100%;
-    background-color: none;
-    padding-left: 30px;
-    padding-right: 10px;
-}
-
-.logo {
-    display: inline-block;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-size: 1.5rem;
-}
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-item a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-size: 1rem;
-}
-
-.nav-item:hover {
-    color: #35E8C6;
-}
-
-.nav-item:hover a {
-color: #35E8C6;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-} */
-
-header {
-    /* position: static;
-    margin-top: 6vh; */
-    /* height: 0; */
-}
-
 
 .nav-item:hover {
     color: #35E8C6;
@@ -124,7 +77,8 @@ section {
 	max-width: 100%;
 	height: auto;
 	color: white;
-	display: block;
+    display: block;
+    margin-bottom: 2rem;
 }
 
 div {
@@ -159,18 +113,222 @@ div {
 }
 
 .project-inner p {
-    color: white;
     letter-spacing: initial;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
+
+.challenge, .solution {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.challenge h3, .solution h3 {
+    color: var(--teal);
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 2rem 0;
+  }
+
+.col-sm {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  
+  .col-md {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+  }
+
+  .col-sm, .col-md {
+      margin-bottom: 0;
+  }
 
 footer {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-top: 10em;
+    margin-top: 15em;
 }
 
 .cursor, .cursor-outline, .particles-js {
     margin: 0;
 }
+
+@media only screen and (max-width: 568px) {
+    .hero a, .btn-main, .hero .btn-alt {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+  
+    section {
+      max-width: 100%;
+      padding: 0 2em;
+      margin: 0;
+      margin-bottom: 8rem;
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    h1 {
+      font-size: 4em;
+      margin-bottom: 0.4em;
+    }
+
+    .project-sub, h2 {
+        font-size: 1.7rem;
+    }
+
+    .project-main h3 {
+        text-align: center;
+    }
+
+    h2, p, h3 {
+        text-align: left;
+    }
+
+    h3 {
+      letter-spacing: 0.1em;
+      font-size: 1.3rem;
+    }
+
+    p, .project-inner p {
+      display: block;
+      font-size: 1rem;
+    }
+    section p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .btn-pill {
+      margin-top: 2.6em;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .col-sm {
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%;
+        margin: 0;
+    }
+    .col-md {
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%;
+        margin: 0;
+    }
+
+    .col-md p {
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+      footer {
+          margin-top: 5rem;
+      }
+  
+      footer .social-links {
+          margin-bottom: 25%;
+      }
+  
+    footer .social-links :not(:last-child) {
+      margin: 0;
+      margin-right: 1.5em;
+    }
+  }
+  
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+      }
+    
+      section {
+        max-width: 100%;
+        padding: 0 2em;
+        margin: 0;
+        margin-bottom: 8rem;
+        text-align: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      h1 {
+        font-size: 5em;
+        margin-bottom: 0.4em;
+      }
+  
+      .project-sub, h2 {
+          font-size: 3rem;
+      }
+
+      .project-main h3 {
+          text-align: center;
+      }
+  
+      h2, p, h3 {
+          text-align: left;
+      }
+  
+      h3 {
+        letter-spacing: 0.1em;
+        font-size: 1.7rem;
+      }
+      
+      p, .project-inner p {
+        display: block;
+        font-size: 1.3rem;
+      }
+      section p:last-of-type {
+        margin-bottom: 0;
+      }
+  
+      .btn-pill {
+        margin-top: 2.6em;
+      }
+  
+      .col-sm {
+        -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
+      }
+      .col-md {
+        -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+                flex: 50%;
+      }
+  
+        footer {
+            margin-top: 5rem;
+        }
+    
+        footer .social-links {
+            margin-bottom: 25%;
+        }
+    
+      footer .social-links :not(:last-child) {
+        margin: 0;
+        margin-right: 1.5em;
+      }
+  }

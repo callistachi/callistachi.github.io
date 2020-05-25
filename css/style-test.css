@@ -205,50 +205,6 @@ nav a {
     text-decoration: none;
   }
  
-  /* SECOND HAMBURGER MENU */
-
-  /* #menuToggle {
-      display: block;
-      position: relative;
-      top: 50px;
-      margin-left: 50px;
-      z-index: 1;
-  
-      -webkit-user-select: none;
-      user-select: none;
-  }
-  
-  #menuToggle input {
-      display: block;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: -7px;
-      left: -5px;
-      opacity: 0; 
-      z-index: 2; 
-  
-      -webkit-touch-callout: none;
-  }
-  
-  #menuToggle span {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-  
-      background: rgba(255, 255, 255, 0.5);
-  
-      z-index: 1;
-  
-      transform-origin: 4px 0px;
-  
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  } */
-
   .three {
     display: none;
     position: absolute;
@@ -294,31 +250,6 @@ nav a {
     -o-transform: translateY(-15px) rotate(-45deg);
     transform: translateY(-15px) rotate(-45deg);
   }
-
-  /* SECOND HAMBURGER MENU */
-
-  /* #menuToggle span:first-child {
-      transform-origin: 0% 0%;
-  }
-  
-  #menuToggle span:nth-last-child(2) {
-      transform-origin: 0% 100%;
-  }
-  
-  #menuToggle input:checked ~ span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-      background: #978e99;
-  }
-  
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -1px);
-  } */
   
   #hamburgerMenu {
       position: absolute;
@@ -347,13 +278,35 @@ nav a {
     padding: 15px 0;
     font-size: 22px;
   }
-  
-  /* SECOND HAMBURGER MENU */
-  /* #menuToggle input:checked ~ ul {
-    transform: none;
-  } */
 
-  .is-active2 {
+  .social-links-hm {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    margin: -50px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    flex-wrap: wrap;
+  }
+
+  .social-link-items {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-link-items a {
+    color: #978e99;
+  }
+
+  .flex-break {
+    flex-basis: 100%;
+    height: 3rem;
+  }
+  
+   .is-active2 {
     transform: none;
   }
 
@@ -720,7 +673,8 @@ nav a {
 	display: flex;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-	text-align: center;
+  text-align: center;
+  padding-top: 24px;
 }
 
 .col-projects {
