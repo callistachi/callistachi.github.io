@@ -141,15 +141,20 @@ div {
             flex: 30%;
   }
   
-  .col-md {
+.col-md {
     -webkit-box-flex: 70%;
-        -ms-flex: 70%;
-            flex: 70%;
-  }
+    -ms-flex: 70%;
+        flex: 70%;
+    text-align: center;
+}
 
-  .col-sm, .col-md {
-      margin-bottom: 0;
-  }
+.col-sm, .col-md {
+    margin-bottom: 0;
+}
+
+.col-md p {
+      text-align: left;
+}
 
 video {
       width: 100%;
