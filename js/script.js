@@ -82,6 +82,9 @@ $(document).ready(function(){
   $(".nav-link").click(function(){
     $(".hamburger").toggleClass("is-active");
     $("#hamburgerMenu").toggleClass("is-active2");
+
+    $("body").toggleClass("position-fixed");
+    $("#particles-js").toggleClass("particles-off");
   });
 });
 
