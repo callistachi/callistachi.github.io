@@ -71,8 +71,10 @@ $(document).ready(function(){
   $(".hamburger").click(function(){
     $(this).toggleClass("is-active");
     $("#hamburgerMenu").toggleClass("is-active2");
-    // $("body").toggleClass("position-fixed");
-    // $("#particles-js").toggleClass("particles-off");
+
+    // Scroll lock when hamburger open
+    $("body").toggleClass("position-fixed");
+    $("#particles-js").toggleClass("particles-off");
   });
 });
 
@@ -91,7 +93,10 @@ $(document).on("click", function(e){
     ){
       $('#hamburgerMenu').toggleClass('is-active2');
       $('.hamburger').toggleClass("is-active");
-  }
+
+      $("body").toggleClass("position-fixed");
+      $("#particles-js").toggleClass("particles-off");
+    }
 });
 
 particlesJS("particles-js", {
