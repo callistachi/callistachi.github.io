@@ -166,6 +166,10 @@ header ul {
   transition: color .3s ease;
 }
 
+.nav-item .selected-item {
+  color: #35E8C6;
+}
+
 .nav-links li:last-of-type a {
 	padding-right: 0;
 }
@@ -306,7 +310,7 @@ nav a {
     height: 3rem;
   }
   
-   .is-active2 {
+  .is-active2 {
     transform: none;
   }
 
