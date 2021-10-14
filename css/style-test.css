@@ -166,7 +166,7 @@ header ul {
   transition: color .3s ease;
 }
 
-.nav-item .selected-item a {
+.nav-item.selected-item a {
   color: #35E8C6;
 }
 
