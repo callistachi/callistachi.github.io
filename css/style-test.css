@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: #2E1C33;
+  background-color: #1D0F4A;
   position: relative;
 }
 
@@ -33,7 +33,7 @@ body, html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #241229;
+  background: #1c0e20;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -450,7 +450,7 @@ nav a {
 
 .btn-pill {
   text-decoration: none;
-  color: #17473E;
+  color: #1D0F4A;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
